@@ -1,0 +1,26 @@
+location: .gitman
+sources:
+  - repo: https://github.com/ctu-mrs/hector_slam
+    name: hector_slam
+    rev: master
+    type: git
+    params:
+    sparse_paths:
+      -
+    links:
+      - source: ''
+        target: ros_packages/hector_slam
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/ctu-mrs/mrs_hector_estimator_plugin
+    name: mrs_hector_estimator_plugin
+    rev: master
+    type: git
+    params:
+    sparse_paths:
+      -
+    links:
+      - source: ''
+        target: ros_packages/mrs_hector_estimator_plugin
+    scripts:
+      - git submodule update --init --recursive
