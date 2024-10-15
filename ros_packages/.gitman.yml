@@ -9,7 +9,7 @@ sources:
       -
     links:
       - source: ''
-        target: ros_packages/hector_slam
+        target: hector_slam
     scripts:
       - git submodule update --init --recursive
   - repo: https://github.com/ctu-mrs/mrs_hector_estimator_plugin
@@ -21,6 +21,6 @@ sources:
       -
     links:
       - source: ''
-        target: ros_packages/mrs_hector_estimator_plugin
+        target: mrs_hector_estimator_plugin
     scripts:
       - git submodule update --init --recursive
