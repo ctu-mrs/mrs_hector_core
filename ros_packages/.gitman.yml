@@ -4,9 +4,9 @@ sources:
     name: hector_slam
     rev: master
     type: git
-    params:
     sparse_paths:
       -
+    link:
     links:
       - source: ''
         target: hector_slam
@@ -16,11 +16,26 @@ sources:
     name: mrs_hector_estimator_plugin
     rev: master
     type: git
-    params:
     sparse_paths:
       -
+    link:
     links:
       - source: ''
         target: mrs_hector_estimator_plugin
     scripts:
       - git submodule update --init --recursive
+sources_locked:
+  - repo: https://github.com/ctu-mrs/hector_slam
+    name: hector_slam
+    rev: 1abcd5f0fa9cbf83373a86933fa82648ba2a3e24
+    type: git
+    sparse_paths:
+      -
+    link:
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+default_group: ''
+groups:
+  -
