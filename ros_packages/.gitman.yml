@@ -27,7 +27,18 @@ sources:
 sources_locked:
   - repo: https://github.com/ctu-mrs/hector_slam
     name: hector_slam
-    rev: 1abcd5f0fa9cbf83373a86933fa82648ba2a3e24
+    rev: 52c040f8b0359550f09d8fd188c2a62f542bd150
+    type: git
+    sparse_paths:
+      -
+    link:
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/ctu-mrs/mrs_hector_estimator_plugin
+    name: mrs_hector_estimator_plugin
+    rev: fe93be32c6fe1837d77540028e00bf22b77a5015
     type: git
     sparse_paths:
       -

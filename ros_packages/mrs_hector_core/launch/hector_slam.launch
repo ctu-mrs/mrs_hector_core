@@ -12,7 +12,7 @@
   <arg name="scan_subscriber_queue_size" default="5" />
   <arg name="scan_topic" default="/$(arg UAV_NAME)/rplidar/scan" />
 
-  <arg name="map_resolution" default="0.04" /> 
+  <arg name="map_resolution" default="0.10" /> 
 
   <!-- ~82 m -->
   <arg name="map_size" default="2048" /> 
@@ -74,10 +74,10 @@
       <param name="laser_z_min_value" value = "-1.5" />
       <param name="laser_z_max_value" value = "1.5" />
       <param name="laser_min_dist" value = "0.3" />
-      <param name="laser_max_dist" value = "15.0" />
+      <param name="laser_max_dist" value = "20.0" />
 
       <param name="update_map_over_max_range" value = "true" />
-      <param name="dist_for_rays_over_max_range" value = "15.0" />
+      <param name="dist_for_rays_over_max_range" value = "10.0" />
 
       <!-- Advertising config -->
       <param name="advertise_map_service" value="true" />
